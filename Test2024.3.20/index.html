@@ -32,6 +32,7 @@
             height: 100%;
             font-size: 100px;
             color: #fff;
+            transition: all .4s ease-out;
         }
         ul .item:first-of-type {
             left: 0;
@@ -39,15 +40,16 @@
         }
         ul .item:nth-of-type(2) {
             left: 100%;
-            background-color: #CCFFFF;
+            background-color: #039b9b;
         }
         ul .item:last-of-type {
             left: 200%;
-            background-color: #CCFF99;
+            background-color: #75bd2e;
         }
         input[type="radio"] {
             position: relative;
             z-index: 1;
+            display: none;
         }
         .box {
             position: absolute;
@@ -72,6 +74,15 @@
         }
         input[type="radio"]:last-of-type:checked ~ .box label:last-child {
             background-color: #333;
+        }
+        input[type="radio"]:first-of-type:checked ~ .item {
+            transform: translateX(0%);
+        }
+        input[type="radio"]:nth-of-type(2):checked ~ .item {
+            transform: translateX(-100%);
+        }
+        input[type="radio"]:last-of-type:checked ~ .item {
+            transform: translateX(-200%);
         }
     </style>
 </head>
