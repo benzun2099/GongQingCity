@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .banner {
+        display: flex;
+        width: 45vw;
+        margin: 0 auto;
+      }
+      .index-hd {
+        height: 9vh;
+        margin: 2vh auto;
+        background-color: rgba(195, 195, 195, 0.5);
+      }
+      .index-nav {
+        height: 25vh;
+      }
+      .nav-son {
+        flex: 1;
+        background-color: rgba(255, 0, 254, 0.3);
+      }
+      .nav-son:nth-child(4),
+      .nav-son:last-child {
+        display: flex;
+        flex-direction: column;
+        flex: 2;
+        background-color: transparent;
+      }
+      .nav-son + .nav-son {
+        margin-left: 1vw;
+      }
+      .nav-sun {
+        flex: 1;
+        background-color: rgba(255, 0, 254, 0.3);
+      }
+      .nav-sun:first-child {
+        margin-bottom: 1vh;
+      }
+      .index-st {
+        height: 20vh;
+        margin: 2vh auto;
+      }
+      .st-son {
+        flex: 1;
+        background-color: rgba(249, 204, 137, 0.5);
+      }
+      .st-son:nth-child(2) {
+        margin: 0 1vw;
+      }
+      .index-ad {
+        height: 25vh;
+      }
+      .ad-son {
+        flex: 2;
+        background-color: rgba(146, 169, 213, 0.5);
+      }
+      .ad-son:last-child {
+        display: flex;
+        flex-direction: column;
+        flex: 3;
+        margin-left: 1vw;
+        background-color: transparent;
+      }
+      .ad-sun {
+        flex: 1;
+        margin-top: 1vh;
+        background-color: rgba(146, 169, 213, 0.5);
+      }
+      .ad-sun:first-child {
+        flex: 5;
+        margin-top: 0;
+      }
+      .index-last {
+        height: 9vh;
+        margin: 2vh auto;
+        background-color: rgba(195, 195, 195, 0.5);
+      }
+      .b1 {
+        height: 100vh;
+        background: url(img1.jpg) no-repeat fixed center;
+        background-size: cover;
+      }
+      .b2 {
+        position: relative;
+        height: 100vh;
+        background: url(img2.jpg) no-repeat fixed center;
+        background-size: cover;
+      }
+      .bigbox {
+        position: fixed;
+        left: 50%;
+        z-index: 999;
+        transform: translateX(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="bigbox">
+      <header class="banner index-hd"></header>
+      <nav class="banner index-nav">
+        <section class="nav-son"></section>
+        <section class="nav-son"></section>
+        <section class="nav-son"></section>
+        <section class="nav-son">
+          <section class="nav-sun"></section>
+          <section class="nav-sun"></section>
+        </section>
+        <section class="nav-son">
+          <section class="nav-sun"></section>
+          <section class="nav-sun"></section>
+        </section>
+      </nav>
+      <article class="banner index-st">
+        <section class="st-son"></section>
+        <section class="st-son"></section>
+        <section class="st-son"></section>
+      </article>
+      <aside class="banner index-ad">
+        <section class="ad-son"></section>
+        <section class="ad-son">
+          <section class="ad-sun"></section>
+          <section class="ad-sun"></section>
+          <section class="ad-sun"></section>
+          <section class="ad-sun"></section>
+          <section class="ad-sun"></section>
+          <section class="ad-sun"></section>
+        </section>
+      </aside>
+      <footer class="banner index-last"></footer>
+    </section>
+    <section class="b1"></section>
+    <section class="b2"></section>
+  </body>
+</html>

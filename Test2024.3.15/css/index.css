@@ -1,0 +1,218 @@
+.banner {
+  width: 1206px;
+  margin: 0 auto;
+}
+
+.on {
+  background-color: #5797f8 !important;
+}
+
+body {
+  min-width: 1206px;
+  background: url(../img/bg.jpg) no-repeat top center;
+}
+
+header {
+  height: 208px;
+  overflow: hidden;
+}
+
+.logo {
+  display: block;
+  margin-top: 68px;
+}
+
+nav {
+  /* 在x轴平铺 */
+  background: url(../img/nav_bg.jpg) repeat-x 0 0;
+}
+
+nav ul li {
+  float: left;
+  width: 150px;
+  line-height: 55px;
+  text-align: center;
+  font-size: 16px;
+  /* 利用背景图片设置边框线 */
+  background: url(../img/nav_line.jpg) no-repeat right center;
+}
+
+nav ul {
+  background: url(../img/nav_right.jpg) no-repeat right 0;
+}
+
+nav ul li a {
+  color: #fff;
+}
+
+.last {
+  background: none;
+}
+
+.leftbox {
+  position: relative;
+  float: left;
+  margin-top: 15px;
+  width: 554px;
+  height: 370px;
+  overflow: hidden;
+}
+
+.leftbox ul {
+  position: absolute;
+  width: 400%;
+}
+
+.leftbox img {
+  width: 554px;
+  height: 370px;
+}
+
+.leftbox ul li {
+  float: left;
+}
+
+.leftbox p {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  text-indent: 14px;
+  color: #fff;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.leftbox ol {
+  position: absolute;
+  bottom: 13.5px;
+  right: 15px;
+}
+
+.leftbox ol li {
+  float: left;
+  margin-left: 8px;
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+  border-radius: 6.5px;
+  background-color: #fff;
+}
+
+.rightbox {
+  float: left;
+  margin-top: 15px;
+  margin-left: 14px;
+  width: 638px;
+  height: 370px;
+}
+
+.rightbox h2 {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 2px solid #dcdcdc;
+}
+
+.rightbox h2 .bt {
+  float: left;
+  font-size: 18px;
+  padding-right: 30px;
+  color: #5797f8;
+  border-bottom: 2px solid #5797f8;
+}
+
+.rightbox h2 > a {
+  float: right;
+  color: #5797f8;
+}
+
+.rightbox ul {
+  padding: 12px 12px 10px;
+}
+
+.rightbox ul li {
+  height: 34px;
+  line-height: 34px;
+  padding-left: 15px;
+  background: url(../img/li.png) no-repeat left center;
+}
+
+.rightbox ul li span {
+  float: right;
+  color: #999;
+}
+
+.ad {
+  margin: 15px 0;
+  height: 111px;
+}
+
+aside {
+  float: left;
+  margin-left: 22px;
+  width: 386px;
+  height: 370px;
+}
+
+article > div aside:first-of-type {
+  margin-left: 0;
+}
+
+article > div aside h2 {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 2px solid #dcdcdc;
+}
+
+article > div aside h2 span {
+  float: left;
+  padding-right: 30px;
+  color: #5797f8;
+  font-size: 18px;
+  border-bottom: 2px solid #5797f8;
+  font-weight: bold;
+}
+
+article > div aside h2 a {
+  float: right;
+  color: #5797f8;
+}
+
+article > div aside ul {
+  padding: 12px 12px 10px;
+}
+
+article > div aside ul li {
+  height: 34px;
+  line-height: 34px;
+  padding-left: 15px;
+  background: url(../img/li.png) no-repeat left center;
+}
+
+article > div aside ul li span {
+  float: right;
+  color: #999;
+}
+
+article > div aside ul li a {
+  color: #333;
+}
+
+footer {
+  margin-top: 20px !important;
+  height: 120px;
+  text-align: center;
+  background: url(../img/footer.jpg) repeat-x 0 0;
+}
+
+footer > div {
+  height: 80px;
+  padding: 32px 0 8px;
+}
+
+footer > div p {
+  color: #fff;
+  line-height: 28px;
+}
